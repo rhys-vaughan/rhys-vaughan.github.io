@@ -1,5 +1,5 @@
 ---
-title: Rhys Vaughan
+title: Technical writer
 description: Technical writer working on product documentation and docs-as-code.
 hide:
   - navigation
