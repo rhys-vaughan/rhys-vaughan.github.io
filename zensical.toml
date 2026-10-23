@@ -1,0 +1,72 @@
+# Portfolio site config. Zensical version is pinned in requirements.txt:
+# never let it float, the workflow installs from that file.
+
+[project]
+site_name = "Rhys Vaughan"
+site_url = "https://rhys-vaughan.github.io/"
+site_description = "Technical writing portfolio of Rhys Vaughan."
+site_author = "Rhys Vaughan"
+repo_url = "https://github.com/rhys-vaughan/rhys-vaughan.github.io"
+repo_name = "Source on GitHub"
+copyright = "&copy; Rhys Vaughan"
+
+nav = [
+  { "Home" = "index.md" },
+  { "Work" = [
+    "work/index.md",
+    { "Migrating to docs-as-code" = "work/docs-migration.md" },
+    { "Docs quality system" = "work/docs-quality.md" },
+  ] },
+  { "About" = "about.md" },
+]
+
+[project.theme]
+language = "en"
+features = [
+  "content.code.copy",
+  "navigation.footer",
+  "navigation.indexes",
+  "navigation.instant",
+  "navigation.instant.prefetch",
+  "navigation.tabs",
+  "navigation.top",
+  "navigation.tracking",
+  "search.highlight",
+]
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "Switch to light mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to system preference"
+
+[project.markdown_extensions]
+abbr = {}
+admonition = {}
+attr_list = {}
+def_list = {}
+md_in_html = {}
+toc.permalink = true
+pymdownx.betterem = {}
+pymdownx.details = {}
+pymdownx.emoji.emoji_generator = "zensical.extensions.emoji.to_svg"
+pymdownx.emoji.emoji_index = "zensical.extensions.emoji.twemoji"
+pymdownx.highlight.anchor_linenums = true
+pymdownx.highlight.pygments_lang_class = true
+pymdownx.inlinehilite = {}
+pymdownx.smartsymbols = {}
+pymdownx.superfences.custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
+]
+pymdownx.tabbed.alternate_style = true
