@@ -24,12 +24,14 @@ definitions:
 
 # A custom layout must define its own Open Graph and Twitter tags;
 # without this block no tags are emitted.
+# The ?v= suffix on the image URL busts LinkedIn's image cache, which is
+# keyed by URL. Bump it whenever the card design or a description changes.
 tags:
   og:type: website
   og:site_name: "{{ config.site_name | x }}"
   og:title: *meta_title
   og:description: *meta_description
-  og:image: "{{ image.url }}"
+  og:image: "{{ image.url }}?v=2"
   og:image:type: "{{ image.type }}"
   og:image:width: "{{ image.width }}"
   og:image:height: "{{ image.height }}"
@@ -37,7 +39,7 @@ tags:
   twitter:card: summary_large_image
   twitter:title: *meta_title
   twitter:description: *meta_description
-  twitter:image: "{{ image.url }}"
+  twitter:image: "{{ image.url }}?v=2"
 
 size: { width: 1200, height: 630 }
 layers:
