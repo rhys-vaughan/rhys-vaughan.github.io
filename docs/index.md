@@ -1,9 +1,12 @@
 ---
 title: Technical writer
-description: Documentation samples and case studies by Rhys Vaughan, covering product docs, release notes, a docs-as-code migration, and docs quality.
+description: "Documentation samples and case studies: product docs, release notes, a docs-as-code migration, and the quality system behind them."
 hide:
   - navigation
   - toc
+social:
+  cards_layout_options:
+    title: Technical writing portfolio
 ---
 
 # Rhys Vaughan

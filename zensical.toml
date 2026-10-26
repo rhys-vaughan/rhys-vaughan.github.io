@@ -72,3 +72,4 @@ pymdownx.superfences.custom_fences = [
 pymdownx.tabbed.alternate_style = true
 
 [project.plugins.social]
+cards_layout = "portfolio"

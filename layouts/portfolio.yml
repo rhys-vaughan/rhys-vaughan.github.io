@@ -1,0 +1,97 @@
+# Social card layout (1200x630) for link previews, used by the social plugin
+# in zensical.toml. Matches the site's default indigo theme and Roboto font.
+# A page can set a card-only title under social.cards_layout_options.title
+# in its front matter (the home page does); its real title is untouched.
+
+definitions:
+
+  - &page_title >-
+    {%- if layout.title -%}
+      {{ layout.title }}
+    {%- else -%}
+      {{ page.meta.get("title", page.title) }}
+    {%- endif -%}
+
+  - &page_description >-
+    {{ page.meta.get("description", "") }}
+
+  # Metadata versions, escaped for HTML attributes
+  - &meta_title >-
+    {{ page.meta.get("title", page.title) | x }} - {{ config.site_name | x }}
+
+  - &meta_description >-
+    {{ page.meta.get("description", config.site_description) | x }}
+
+# A custom layout must define its own Open Graph and Twitter tags;
+# without this block no tags are emitted.
+tags:
+  og:type: website
+  og:site_name: "{{ config.site_name | x }}"
+  og:title: *meta_title
+  og:description: *meta_description
+  og:image: "{{ image.url }}"
+  og:image:type: "{{ image.type }}"
+  og:image:width: "{{ image.width }}"
+  og:image:height: "{{ image.height }}"
+  og:url: "{{ page.canonical_url }}"
+  twitter:card: summary_large_image
+  twitter:title: *meta_title
+  twitter:description: *meta_description
+  twitter:image: "{{ image.url }}"
+
+size: { width: 1200, height: 630 }
+layers:
+
+  - background:
+      color: "#4051b5"
+
+  # Name
+  - size: { width: 800, height: 44 }
+    offset: { x: 64, y: 64 }
+    typography:
+      content: "{{ config.site_name }}"
+      align: start center
+      color: "#ffffff"
+      font:
+        family: Roboto
+        style: Bold
+
+  # Page title: shrinks to fit two lines rather than truncating
+  - size: { width: 1040, height: 200 }
+    offset: { x: 62, y: 190 }
+    typography:
+      content: *page_title
+      align: start top
+      color: "#ffffff"
+      overflow: shrink
+      line:
+        amount: 2
+        height: 1.2
+      font:
+        family: Roboto
+        style: Bold
+
+  # Page description
+  - size: { width: 1000, height: 68 }
+    offset: { x: 64, y: 470 }
+    typography:
+      content: *page_description
+      align: start top
+      color: "#dde1f5"
+      line:
+        amount: 2
+        height: 1.5
+      font:
+        family: Roboto
+        style: Regular
+
+  # Site address
+  - size: { width: 500, height: 28 }
+    offset: { x: 636, y: 566 }
+    typography:
+      content: rhys-vaughan.github.io
+      align: end center
+      color: "#dde1f5"
+      font:
+        family: Roboto
+        style: Regular
