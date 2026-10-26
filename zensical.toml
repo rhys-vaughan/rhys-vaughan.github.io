@@ -70,3 +70,5 @@ pymdownx.superfences.custom_fences = [
   { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
 ]
 pymdownx.tabbed.alternate_style = true
+
+[project.plugins.social]
