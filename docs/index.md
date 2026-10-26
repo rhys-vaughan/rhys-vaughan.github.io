@@ -1,6 +1,6 @@
 ---
 title: Technical writer
-description: Technical writer working on product documentation and docs-as-code.
+description: Documentation samples and case studies by Rhys Vaughan, covering product docs, release notes, a docs-as-code migration, and docs quality.
 hide:
   - navigation
   - toc
