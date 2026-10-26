@@ -26,9 +26,10 @@ definitions:
 # without this block no tags are emitted.
 # The ?v= suffix on the image URL busts LinkedIn's image cache, which is
 # keyed by URL. Bump it whenever the card design or a description changes.
+# There's no og:site_name on purpose: without it, LinkedIn shows the page
+# address under the link title instead of the site name.
 tags:
   og:type: website
-  og:site_name: "{{ config.site_name | x }}"
   og:title: *meta_title
   og:description: *meta_description
   og:image: "{{ image.url }}?v=2"
