@@ -1,6 +1,6 @@
 ---
 title: Rhys Vaughan
-description: "Portfolio and blog of Rhys Vaughan: the docs program I built at Apteco, how I work, and writing about documentation in a changing field."
+description: "Rhys Vaughan's portfolio and blog: the docs program I built at Apteco, how I work, and writing about documentation in a changing field."
 hide:
   - navigation
   - toc

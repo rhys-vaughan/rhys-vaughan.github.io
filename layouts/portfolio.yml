@@ -27,9 +27,15 @@ definitions:
   - &address >-
     {{ config.site_url | replace("https://", "") | replace("/", "") }}
 
-  # Metadata versions, escaped for HTML attributes
+  # Metadata versions, escaped for HTML attributes. A page titled with the
+  # site name (the home page) doesn't get the name twice.
   - &meta_title >-
-    {{ page.meta.get("title", page.title) | x }} - {{ config.site_name | x }}
+    {%- set title = page.meta.get("title", page.title) -%}
+    {%- if title == config.site_name -%}
+      {{ title | x }}
+    {%- else -%}
+      {{ title | x }} - {{ config.site_name | x }}
+    {%- endif -%}
 
   - &meta_description >-
     {{ page.meta.get("description", config.site_description) | x }}
@@ -44,7 +50,7 @@ tags:
   og:type: website
   og:title: *meta_title
   og:description: *meta_description
-  og:image: "{{ image.url }}?v=3"
+  og:image: "{{ image.url }}?v=4"
   og:image:type: "{{ image.type }}"
   og:image:width: "{{ image.width }}"
   og:image:height: "{{ image.height }}"
@@ -52,7 +58,7 @@ tags:
   twitter:card: summary_large_image
   twitter:title: *meta_title
   twitter:description: *meta_description
-  twitter:image: "{{ image.url }}?v=3"
+  twitter:image: "{{ image.url }}?v=4"
 
 size: { width: 1200, height: 630 }
 layers:

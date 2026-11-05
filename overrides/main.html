@@ -5,6 +5,16 @@
 -#}
 {% extends "base.html" %}
 
+{#- The theme titles every page "Page - Site name", which gives the home page
+    (titled with the site name) "Rhys Vaughan - Rhys Vaughan". -#}
+{% block htmltitle %}
+  {% if page.meta and page.meta.title == config.site_name %}
+    <title>{{ config.site_name }}</title>
+  {% else %}
+    {{ super() }}
+  {% endif %}
+{% endblock %}
+
 {% block extrahead %}
   <link rel="alternate" type="application/rss+xml" title="The docs are alright" href="{{ 'feed_rss_created.xml' | url }}">
 {% endblock %}
