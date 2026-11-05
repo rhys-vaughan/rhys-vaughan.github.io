@@ -1,0 +1,9 @@
+{#- One line per post in the blog index: date, then title. Replaces the
+    theme's excerpt card. -#}
+{% import "partials/date.html" as dates %}
+<article class="post-row">
+  <time datetime="{{ (post.config.date.created | string)[:10] }}">
+    {{- dates.british(post.config.date.created, true) -}}
+  </time>
+  <a href="{{ post.url | url }}">{{ post.title }}</a>
+</article>

@@ -1,43 +1,36 @@
 ---
-title: Technical writer
-description: "Documentation samples and case studies: product docs, release notes, a docs-as-code migration, and the quality system behind them."
+title: Rhys Vaughan
+description: "Rhys Vaughan, technical writer and documentation engineer at Apteco. What I've built, how I work, and a blog about documentation in a changing field."
 hide:
   - navigation
   - toc
 social:
   cards_layout_options:
-    title: Technical writing portfolio
+    title: Technical writer and documentation engineer
 ---
 
 # Rhys Vaughan
 
-I'm a technical writer. I write product documentation for a marketing data platform, for everyone from business users to IT admins, and I look after the tooling and processes that keep it accurate.
+<div class="intro" markdown>
 
-[See my work](work/index.md){ .md-button .md-button--primary }
-[About me](about.md){ .md-button }
+Hi, I'm Rhys Vaughan, a technical writer and documentation engineer. I look after the [Apteco Help Hub](https://help.apteco.com/en/){ target="_blank" rel="noopener" } and the tooling behind it.
 
-## Selected work
-
-Each piece says who it was for and how I approached it.
-
-<div class="grid cards" markdown>
-
--   ### Migrating to docs-as-code
-
-    Moving about 950 pages from six MadCap Flare projects to a single Markdown site in six months.
-
-    **[:octicons-arrow-right-24: Read the case study](work/docs-migration.md)**
-
--   ### Docs quality system
-
-    The style guide, automated checks, and review workflow behind every change to the site.
-
-    **[:octicons-arrow-right-24: Read the case study](work/docs-quality.md)**
-
--   ### Documentation samples
-
-    Live pages covering troubleshooting, a feature concept and task, an admin change notice, and release notes.
-
-    **[:octicons-arrow-right-24: See the samples](work/index.md#documentation-samples)**
+Here's [what I've been working on](work/index.md), and here's my blog, [The docs are alright](blog/index.md).
 
 </div>
+
+<p class="links-row" markdown>
+[:fontawesome-brands-linkedin: LinkedIn](https://www.linkedin.com/in/rhys-vaughan/){ target="_blank" rel="noopener" }
+[:fontawesome-brands-github: GitHub](https://github.com/rhys-vaughan){ target="_blank" rel="noopener" }
+[:material-rss: RSS](feed_rss_created.xml)
+</p>
+
+## Recent posts
+
+<div class="recent-posts" data-recent-posts="5" data-feed="feed_json_created.json" markdown>
+
+[Read the blog](blog/index.md)
+
+</div>
+
+<p class="more-link" markdown>[All posts →](blog/index.md)</p>

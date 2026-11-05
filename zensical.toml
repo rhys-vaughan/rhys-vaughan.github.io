@@ -1,14 +1,19 @@
-# Portfolio site config. Zensical version is pinned in requirements.txt:
+# Site config. Zensical version is pinned in requirements.txt:
 # never let it float, the workflow installs from that file.
+#
+# The look is deliberately not a docs site: overrides/main.html replaces the
+# theme's header, sidebars, tabs and footer, and extra.css does the rest.
 
 [project]
 site_name = "Rhys Vaughan"
 site_url = "https://rhys-vaughan.github.io/"
-site_description = "Technical writing portfolio of Rhys Vaughan."
+site_description = "Rhys Vaughan, technical writer and documentation engineer. Portfolio, work, and a blog about documentation in a changing field."
 site_author = "Rhys Vaughan"
 repo_url = "https://github.com/rhys-vaughan/rhys-vaughan.github.io"
 repo_name = "Source on GitHub"
 copyright = "&copy; Rhys Vaughan"
+extra_css = ["assets/stylesheets/extra.css"]
+extra_javascript = ["assets/javascripts/extra.js"]
 
 nav = [
   { "Home" = "index.md" },
@@ -17,39 +22,71 @@ nav = [
     { "Migrating to docs-as-code" = "work/docs-migration.md" },
     { "Docs quality system" = "work/docs-quality.md" },
   ] },
+  { "Blog" = ["blog/index.md"] },
   { "About" = "about.md" },
 ]
 
 [project.theme]
 language = "en"
+custom_dir = "overrides"
+# Google Fonts, loaded by the theme. Match them in layouts/portfolio.yml.
+font.text = "Fira Sans"
+font.code = "Fira Mono"
 features = [
   "content.code.copy",
-  "navigation.footer",
   "navigation.indexes",
-  "navigation.instant",
-  "navigation.instant.prefetch",
-  "navigation.tabs",
-  "navigation.top",
-  "navigation.tracking",
-  "search.highlight",
 ]
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme)"
+primary = "custom"
+accent = "custom"
 toggle.icon = "lucide/sun-moon"
 toggle.name = "Switch to light mode"
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme: light)"
 scheme = "default"
+primary = "custom"
+accent = "custom"
 toggle.icon = "lucide/sun"
 toggle.name = "Switch to dark mode"
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme: dark)"
 scheme = "slate"
+primary = "custom"
+accent = "custom"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to system preference"
+
+# Header links (overrides/main.html). Paths are relative to the site root.
+[[project.extra.menu]]
+name = "Work"
+link = "work/"
+
+[[project.extra.menu]]
+name = "Blog"
+link = "blog/"
+
+[[project.extra.menu]]
+name = "About"
+link = "about/"
+
+[[project.extra.menu]]
+name = "RSS"
+link = "feed_rss_created.xml"
+
+# Footer links (overrides/main.html)
+[[project.extra.social]]
+icon = "fontawesome/brands/linkedin"
+name = "LinkedIn"
+link = "https://www.linkedin.com/in/rhys-vaughan/"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+name = "GitHub"
+link = "https://github.com/rhys-vaughan"
 
 [project.markdown_extensions]
 abbr = {}
@@ -70,6 +107,16 @@ pymdownx.superfences.custom_fences = [
   { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
 ]
 pymdownx.tabbed.alternate_style = true
+
+[project.plugins.blog]
+post_url_format = "{slug}"
+pagination_per_page = 50
+
+[project.plugins.rss]
+feed_title = "The docs are alright"
+match_path = "blog/posts/.*"
+abstract_chars_count = -1
+date_from_meta = { as_creation = "date" }
 
 [project.plugins.social]
 cards_layout = "portfolio"

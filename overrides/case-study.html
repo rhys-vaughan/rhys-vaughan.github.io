@@ -1,0 +1,9 @@
+{#- Case study pages (front matter: template: case-study.html). Adds a way
+    back to the Work page above the title, like the blog post meta line. -#}
+{% extends "main.html" %}
+{% block content %}
+  <p class="post-meta">
+    <a href="{{ 'work/' | url }}">← Work</a> · Case study
+  </p>
+  {% include "partials/content.html" %}
+{% endblock %}

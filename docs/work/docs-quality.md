@@ -1,11 +1,12 @@
 ---
 title: Docs quality system
 description: Case study of the style guide, automated checks, and review workflow behind a documentation site.
+template: case-study.html
 ---
 
 # Docs quality system
 
-Once the content from six documentation projects was on one site, it needed to read as if one person wrote it and stay that way, with new content shipping every two weeks. This case study covers the style guide, automated checks, and review workflow I set up to do that.
+Once the content from six documentation projects was on one site, it needed to read as if one person wrote it and stay that way with changes going out all the time. This case study covers the style guide, automated checks, and review workflow I set up to do that.
 
 - **Audience:** the writers and reviewers who change the site
 - **Problem:** consistency that depended on memory and a careful final read
@@ -17,7 +18,8 @@ Once the content from six documentation projects was on one site, it needed to r
 Every change passes through several layers of checks, each catching a different kind of problem:
 
 - **House style guide:** a single written reference for voice, terminology, formatting, and page structure. It covers rules like second person, sentence-case headings, British English, and that every heading needs an introduction before the next one.
-- **Prose linting:** Vale runs the Microsoft Writing Style Guide rules plus six custom rules I wrote, covering date formats, first use of acronyms, Latin abbreviations, em dashes, and a product word list.
+- **Prose linting:** Vale runs the Microsoft Writing Style Guide rules plus 16 custom rules I wrote, covering things like date formats, first use of acronyms, Latin abbreviations, em dashes, British spelling, and a product word list.
+- **Checks while editing:** when I edit a page with an AI assistant, a hook runs Vale on it straight away and reports problems back, so they're fixed before the change is finished, not found in review.
 - **Markdown linting:** markdownlint catches structural problems in the source.
 - **AI review:** before each pull request, an AI review agent checks changed pages against the house style and builds the site to catch Markdown that looks right in source but renders wrong.
 - **Pull requests and previews:** nothing goes straight to the live site. Every change goes through a branch and pull request, and each pull request gets its own preview deployment for reviewers to check the rendered pages.
@@ -30,3 +32,7 @@ Automating the checks changed what reviewers spend their time on.
 - Rules that a linter can check get followed; rules that can't be automated need a named place in review, or they drift.
 - Writing a custom rule forces you to define the rule precisely, which often shows the style guide was vaguer than it looked.
 - Pin your tools. An unplanned upgrade is a change nobody reviewed.
+
+## Next
+
+Read the other case study: [Migrating to docs-as-code](docs-migration.md), how the site came together in the first place.
