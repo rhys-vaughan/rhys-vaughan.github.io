@@ -1,0 +1,17 @@
+{#- A single blog post: no sidebar, just a meta line above the content. -#}
+{% extends "main.html" %}
+{% import "partials/date.html" as dates %}
+{% block container %}
+  <div class="md-content" data-md-component="content">
+    <article class="md-content__inner md-typeset post">
+      <a id="__skip" tabindex="-1"></a>
+      <p class="post-meta">
+        <a href="{{ page.parent.url | url }}">The docs are alright</a>
+        · <time datetime="{{ (page.config.date.created | string)[:10] }}">{{ dates.british(page.config.date.created) }}</time>
+      </p>
+      {% block content %}
+        {% include "partials/content.html" %}
+      {% endblock %}
+    </article>
+  </div>
+{% endblock %}

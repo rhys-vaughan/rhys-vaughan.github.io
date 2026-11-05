@@ -1,0 +1,9 @@
+{#- British dates ("5 November 2026", or "5 Nov 2026" when short) from the
+    blog plugin's "2026-11-05 00:00:00+00:00". The theme's date filter only
+    does US order and takes no format argument. -#}
+{% macro british(value, short=false) -%}
+  {%- set months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] -%}
+  {%- set s = value | string -%}
+  {%- set month = months[(s[5:7] | int) - 1] -%}
+  {{- s[8:10] | int }} {{ month[:3] if short else month }} {{ s[0:4] -}}
+{%- endmacro %}

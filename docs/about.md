@@ -1,26 +1,21 @@
 ---
 title: About
-description: About Rhys Vaughan, technical writer.
+description: "About Rhys Vaughan, technical writer and documentation engineer at Apteco."
+hide:
+  - navigation
+  - toc
 ---
 
 # About
 
-I'm a technical writer at a B2B marketing software company, where I write product documentation and look after the public help site and the tooling behind it.
+I'm Rhys, a technical writer and documentation engineer at Apteco in Warwick, UK.
 
-I started out as a copywriter in Prague for a few years, then moved into technical writing in 2020, and joined my current company in 2022 after my first technical writing role.
+I got into technical writing the long way round. After a degree in anthropology, I taught English in South Korea, then moved to Prague, where I worked as an editor, a QA specialist, and a copywriter. I became a technical writer at Make, a no-code automation platform, at the end of 2021, and joined Apteco in 2022.
 
-## Skills and tools
+These days I look after the [Apteco Help Hub](https://help.apteco.com/en/){ target="_blank" rel="noopener" }, and the tools and processes behind it. I'm optimistic about where documentation is going, which is what my blog, [The docs are alright](blog/index.md), is about.
 
-These are the things I do and use day to day:
-
-- Task-based and conceptual documentation for business users and IT admins
-- Release notes and change communication
-- Information architecture, content audits, and consolidation
-- Docs-as-code: Markdown, Git, pull request reviews, and static site generators (Zensical)
-- Prose and Markdown linting with Vale and markdownlint
-- Documentation migration from MadCap Flare
-- AI-assisted documentation workflows with Claude Code
+For more on what I do, see [my work](work/index.md).
 
 ## Contact
 
-You can find me on [LinkedIn](https://www.linkedin.com/in/rhys-vaughan/){ target="_blank" rel="noopener" } and [GitHub](https://github.com/rhys-vaughan){ target="_blank" rel="noopener" }.
+You can find me on [LinkedIn](https://www.linkedin.com/in/rhys-vaughan/){ target="_blank" rel="noopener" } and [GitHub](https://github.com/rhys-vaughan){ target="_blank" rel="noopener" }, or read my [CV (PDF)](rhys-vaughan-cv.pdf){ target="_blank" rel="noopener" }.

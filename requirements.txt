@@ -1,1 +1,3 @@
-zensical==0.0.71
+zensical==0.0.74
+# Time zone data for the rss plugin's date_from_meta (Windows has no system tz database)
+tzdata==2026.6

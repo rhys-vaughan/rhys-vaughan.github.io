@@ -1,0 +1,54 @@
+{#-
+  Replaces the theme's docs chrome (header, tabs, sidebars, footer) with a
+  plain personal-site header and footer. Page content still renders through
+  the theme, so admonitions, code blocks and the rest keep working.
+-#}
+{% extends "base.html" %}
+
+{% block extrahead %}
+  <link rel="alternate" type="application/rss+xml" title="The docs are alright" href="{{ 'feed_rss_created.xml' | url }}">
+{% endblock %}
+
+{#- The theme's JavaScript looks up the header component, so the element
+    keeps data-md-component="header" even though it's our own markup. -#}
+{% block header %}
+  <header class="site-header" data-md-component="header">
+    <nav class="site-header__inner" aria-label="Main">
+      <a class="site-header__name" href="{{ nav.homepage.url | url }}">{{ config.site_name }}</a>
+      <ul class="site-header__links">
+        {% for item in config.extra.menu %}
+          <li>
+            <a href="{{ item.link | url }}" {% if page.url and item.link in page.url %}aria-current="page"{% endif %}>{{ item.name }}</a>
+          </li>
+        {% endfor %}
+        {% if config.theme.palette %}
+          <li class="site-header__palette">
+            {% include "partials/palette.html" %}
+          </li>
+        {% endif %}
+      </ul>
+    </nav>
+    {% include "partials/javascripts/palette.html" %}
+  </header>
+{% endblock %}
+
+{% block tabs %}{% endblock %}
+{% block site_nav %}{% endblock %}
+
+{% block footer %}
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>
+        {{ config.copyright }}
+        {% for social in config.extra.social %}
+          · <a href="{{ social.link }}" target="_blank" rel="noopener">{{ social.name }}</a>
+        {% endfor %}
+        · <a href="{{ 'feed_rss_created.xml' | url }}">RSS</a>
+      </p>
+      <p>
+        Built with <a href="https://zensical.org/" target="_blank" rel="noopener">Zensical</a>
+        · <a href="{{ config.repo_url }}" target="_blank" rel="noopener">Source on GitHub</a>
+      </p>
+    </div>
+  </footer>
+{% endblock %}
