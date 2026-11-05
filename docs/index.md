@@ -1,6 +1,6 @@
 ---
 title: Rhys Vaughan
-description: "Rhys Vaughan, technical writer and documentation engineer at Apteco. What I've built, how I work, and a blog about documentation in a changing field."
+description: "Portfolio and blog of Rhys Vaughan: the docs program I built at Apteco, how I work, and writing about documentation in a changing field."
 hide:
   - navigation
   - toc
@@ -22,6 +22,7 @@ Here's [what I've been working on](work/index.md), and here's my blog, [The docs
 <p class="links-row" markdown>
 [:fontawesome-brands-linkedin: LinkedIn](https://www.linkedin.com/in/rhys-vaughan/){ target="_blank" rel="noopener" }
 [:fontawesome-brands-github: GitHub](https://github.com/rhys-vaughan){ target="_blank" rel="noopener" }
+[:material-file-document-outline: CV](rhys-vaughan-cv.pdf){ target="_blank" rel="noopener" }
 [:material-rss: RSS](feed_rss_created.xml)
 </p>
 

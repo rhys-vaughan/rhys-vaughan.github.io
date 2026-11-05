@@ -1,5 +1,6 @@
 # Social card layout (1200x630) for link previews, used by the social plugin
-# in zensical.toml. Matches the site's default indigo theme and Roboto font.
+# in zensical.toml. Matches the site's dark scheme and Fira Sans (the plugin
+# loads fonts from Google Fonts, so the family must exist there).
 # A page can set a card-only title under social.cards_layout_options.title
 # in its front matter (the home page does); its real title is untouched.
 
@@ -14,6 +15,17 @@ definitions:
 
   - &page_description >-
     {{ page.meta.get("description", "") }}
+
+  # Blog posts get the blog's name above the title; other pages get nothing.
+  # Skipped when the post title is the blog's name (the first post).
+  - &kicker >-
+    {%- if page.url and "blog/" in page.url and page.url != "blog/" and page.title != "The docs are alright" -%}
+      The docs are alright
+    {%- endif -%}
+
+  # The site address, from site_url, so it follows a domain change
+  - &address >-
+    {{ config.site_url | replace("https://", "") | replace("/", "") }}
 
   # Metadata versions, escaped for HTML attributes
   - &meta_title >-
@@ -32,7 +44,7 @@ tags:
   og:type: website
   og:title: *meta_title
   og:description: *meta_description
-  og:image: "{{ image.url }}?v=2"
+  og:image: "{{ image.url }}?v=3"
   og:image:type: "{{ image.type }}"
   og:image:width: "{{ image.width }}"
   og:image:height: "{{ image.height }}"
@@ -40,28 +52,45 @@ tags:
   twitter:card: summary_large_image
   twitter:title: *meta_title
   twitter:description: *meta_description
-  twitter:image: "{{ image.url }}?v=2"
+  twitter:image: "{{ image.url }}?v=3"
 
 size: { width: 1200, height: 630 }
 layers:
 
   - background:
-      color: "#4051b5"
+      color: "#14171c"
 
   # Name
-  - size: { width: 800, height: 44 }
-    offset: { x: 64, y: 64 }
+  - size: { width: 800, height: 40 }
+    offset: { x: 80, y: 72 }
     typography:
       content: "{{ config.site_name }}"
       align: start center
-      color: "#ffffff"
+      color: "#e4e6ea"
       font:
-        family: Roboto
+        family: Fira Sans
         style: Bold
 
+  # Accent rule under the name
+  - size: { width: 64, height: 4 }
+    offset: { x: 80, y: 128 }
+    background:
+      color: "#6ec6e6"
+
+  # Blog name, on posts only
+  - size: { width: 900, height: 36 }
+    offset: { x: 80, y: 196 }
+    typography:
+      content: *kicker
+      align: start center
+      color: "#6ec6e6"
+      font:
+        family: Fira Sans
+        style: Regular
+
   # Page title: shrinks to fit two lines rather than truncating
-  - size: { width: 1040, height: 200 }
-    offset: { x: 62, y: 190 }
+  - size: { width: 1040, height: 190 }
+    offset: { x: 78, y: 244 }
     typography:
       content: *page_title
       align: start top
@@ -69,32 +98,32 @@ layers:
       overflow: shrink
       line:
         amount: 2
-        height: 1.2
+        height: 1.15
       font:
-        family: Roboto
+        family: Fira Sans
         style: Bold
 
   # Page description
-  - size: { width: 1000, height: 68 }
-    offset: { x: 64, y: 470 }
+  - size: { width: 1000, height: 72 }
+    offset: { x: 80, y: 456 }
     typography:
       content: *page_description
       align: start top
-      color: "#dde1f5"
+      color: "#99a1ab"
       line:
         amount: 2
         height: 1.5
       font:
-        family: Roboto
+        family: Fira Sans
         style: Regular
 
   # Site address
-  - size: { width: 500, height: 28 }
-    offset: { x: 636, y: 566 }
+  - size: { width: 600, height: 28 }
+    offset: { x: 520, y: 552 }
     typography:
-      content: rhys-vaughan.github.io
+      content: *address
       align: end center
-      color: "#dde1f5"
+      color: "#99a1ab"
       font:
-        family: Roboto
+        family: Fira Sans
         style: Regular

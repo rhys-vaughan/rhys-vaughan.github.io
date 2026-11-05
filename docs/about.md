@@ -18,4 +18,4 @@ For more on what I do, see [my work](work/index.md).
 
 ## Contact
 
-You can find me on [LinkedIn](https://www.linkedin.com/in/rhys-vaughan/){ target="_blank" rel="noopener" } and [GitHub](https://github.com/rhys-vaughan){ target="_blank" rel="noopener" }.
+You can find me on [LinkedIn](https://www.linkedin.com/in/rhys-vaughan/){ target="_blank" rel="noopener" } and [GitHub](https://github.com/rhys-vaughan){ target="_blank" rel="noopener" }, or read my [CV (PDF)](rhys-vaughan-cv.pdf){ target="_blank" rel="noopener" }.

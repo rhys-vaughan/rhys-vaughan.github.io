@@ -6,7 +6,7 @@
 
 [project]
 site_name = "Rhys Vaughan"
-site_url = "https://rhys-vaughan.github.io/"
+site_url = "https://rhysvaughan.dev/"
 site_description = "Rhys Vaughan, technical writer and documentation engineer. Portfolio, work, and a blog about documentation in a changing field."
 site_author = "Rhys Vaughan"
 repo_url = "https://github.com/rhys-vaughan/rhys-vaughan.github.io"
