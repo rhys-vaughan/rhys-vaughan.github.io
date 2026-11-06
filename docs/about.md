@@ -8,11 +8,11 @@ hide:
 
 # About
 
-I'm Rhys, a technical writer and documentation engineer at Apteco in Warwick, UK. I look after the [Apteco Help Hub](https://help.apteco.com/en/){ target="_blank" rel="noopener" }, and the tools and processes behind it.
+I'm Rhys, a technical writer and content engineer working on documentation at Apteco. I look after the [Apteco Help Hub](https://help.apteco.com/en/){ target="_blank" rel="noopener" }, and the tools and processes behind it.
 
 ## How I got here
 
-I took the long way round. After a degree in anthropology, I moved to South Korea to teach English, met my wife there, and we later moved to Prague together.
+I took a long way round. After a degree in anthropology, I moved to South Korea to teach English, met my wife there, and we later moved to Prague together.
 
 In Prague I worked as an editor, then in QA, then as a copywriter. Switching from copywriting to technical writing, at the end of 2021, is what made me fall in love with the job. The contrast in style and purpose was huge, and I enjoyed technical writing far more than writing copy.
 
@@ -42,7 +42,7 @@ I joined Apteco in 2022, and in 2026 I moved its help site to docs-as-code. Ther
 
 ## Outside work
 
-Outside work, I'm a dad to two small kids. I love cooking, reading, and playing Magic: The Gathering. I'm also a big rugby fan, especially when Wales are playing.
+Outside work, I love cooking, reading, and hanging out with my family. I play Magic: The Gathering in my spare time and I'm a huge rugby fan, especially when Wales are playing.
 
 ## Contact
 
