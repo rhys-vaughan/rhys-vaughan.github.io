@@ -13,7 +13,7 @@ social:
 
 <div class="intro" markdown>
 
-Hi, I'm Rhys, a technical writer and documentation engineer. I look after the [Apteco Help Hub](https://help.apteco.com/en/){ target="_blank" rel="noopener" } and the tooling behind it.
+Hello! I'm Rhys, a technical writer and documentation engineer. I look after the [Apteco Help Hub](https://help.apteco.com/en/){ target="_blank" rel="noopener" } and the tooling behind it.
 
 Here's [what I've been working on](work/index.md), and here's my blog, [The docs are alright](blog/index.md).
 
