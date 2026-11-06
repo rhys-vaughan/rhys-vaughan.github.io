@@ -49,7 +49,7 @@ tags:
   og:type: website
   og:title: *meta_title
   og:description: *meta_description
-  og:image: "{{ image.url }}?v=5"
+  og:image: "{{ image.url }}?v=6"
   og:image:type: "{{ image.type }}"
   og:image:width: "{{ image.width }}"
   og:image:height: "{{ image.height }}"
@@ -57,7 +57,7 @@ tags:
   twitter:card: summary_large_image
   twitter:title: *meta_title
   twitter:description: *meta_description
-  twitter:image: "{{ image.url }}?v=5"
+  twitter:image: "{{ image.url }}?v=6"
 
 size: { width: 1200, height: 630 }
 layers:
