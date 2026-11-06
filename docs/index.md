@@ -1,5 +1,5 @@
 ---
-title: Rhys Vaughan
+title: Rhys Vaughan, technical writer and documentation engineer
 description: "Rhys Vaughan's portfolio and blog: the docs program I built at Apteco, how I work, and writing about documentation in a changing field."
 hide:
   - navigation
@@ -30,7 +30,7 @@ Here's [what I've been working on](work/index.md), and here's my blog, [The docs
 
 <div class="recent-posts" data-recent-posts="5" data-feed="feed_json_created.json" markdown>
 
-[Read the blog](blog/index.md)
+The latest posts are on [the blog](blog/index.md).
 
 </div>
 

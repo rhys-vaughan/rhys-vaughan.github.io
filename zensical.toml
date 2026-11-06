@@ -73,10 +73,6 @@ link = "blog/"
 name = "About"
 link = "about/"
 
-[[project.extra.menu]]
-name = "RSS"
-link = "feed_rss_created.xml"
-
 # Footer links (overrides/main.html)
 [[project.extra.social]]
 icon = "fontawesome/brands/linkedin"
@@ -117,6 +113,10 @@ feed_title = "The docs are alright"
 match_path = "blog/posts/.*"
 abstract_chars_count = -1
 date_from_meta = { as_creation = "date" }
+
+# Old URLs that moved. Keys are the old path as a .md file, relative to docs/.
+[project.plugins.redirects.redirect_maps]
+"blog/the-docs-are-alright.md" = "https://rhysvaughan.dev/blog/exciting-time-to-be-a-technical-writer/"
 
 [project.plugins.social]
 cards_layout = "portfolio"
