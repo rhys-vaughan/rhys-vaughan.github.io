@@ -30,7 +30,7 @@ I migrated one project at a time, starting small and leaving the hardest until l
 3. **Content review:** scripts got the content across, but I reviewed every product section by hand before publishing it, merging duplicate pages and fixing anything that didn't survive the conversion.
 4. **Order:** the largest, most frequently updated product went last, so it changed the fewest times during the migration.
 
-Keeping old links working mattered as much as the new content, because customers, support articles, and search engines all pointed at the old URLs. The site has about 3,000 redirect rules. An audit before launch found that catch-all rules sat above about 1,700 specific ones, so the specific rules never fired. Moving the catch-all rules to the end fixed it.
+Keeping old links working mattered as much as the new content, because customers, support articles, and search engines all pointed at the old URLs. The site has more than 3,300 redirect rules. An audit before launch found that catch-all rules sat above about 1,700 specific ones, so the specific rules never fired. Moving the catch-all rules to the end fixed it.
 
 ## What I learned
 

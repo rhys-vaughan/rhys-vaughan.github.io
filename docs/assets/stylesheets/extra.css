@@ -283,6 +283,35 @@ pre {
   color: var(--site-text);
 }
 
+/* ---- Selected work (home) ---------------------------------------------- */
+
+/* A definition list: the link is the term, the result is the description.
+   Plain rows, not cards, so the home page doesn't look like a docs index. */
+.md-typeset .work-rows dl {
+  margin: 0;
+}
+
+.md-typeset .work-rows dt {
+  margin-top: 0.9rem;
+  font-weight: 600;
+}
+
+.md-typeset .work-rows dt a {
+  color: var(--site-text);
+  text-decoration: none;
+}
+
+.md-typeset .work-rows dt a:hover {
+  color: var(--site-link);
+}
+
+.md-typeset .work-rows dd {
+  margin: 0.2rem 0 0;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px dotted var(--site-border);
+  color: var(--site-muted);
+}
+
 /* ---- Post lists (blog index, archive, home) ---------------------------- */
 
 .post-row {

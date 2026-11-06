@@ -26,6 +26,21 @@ Here's [what I've been working on](work/index.md), and here's my blog, [The docs
 [:material-rss: RSS](feed_rss_created.xml)
 </p>
 
+## Selected work
+
+<div class="work-rows" markdown>
+
+[Migrating to docs-as-code](work/docs-migration.md)
+:   About 950 pages from six MadCap Flare projects to one site, on my own. Publishing went from 7 or 8 minutes to about one, and more than 3,300 redirects keep old links working.
+
+[A docs quality system](work/docs-quality.md)
+:   A house style guide, 16 custom Vale rules, checks on every edit, and an AI review before every pull request.
+
+[A docs program for a team of one](work/index.md#recent-work)
+:   278 pull requests since February, release notes every two weeks, and docs work tracked alongside development in Azure DevOps.
+
+</div>
+
 ## Recent posts
 
 <div class="recent-posts" data-recent-posts="5" data-feed="feed_json_created.json" markdown>
