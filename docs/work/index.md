@@ -24,14 +24,14 @@ I planned and ran the move of about 950 pages from six Flare projects to one sit
 ### A docs program, not just a docs site
 
 - **Docs work moved into Azure DevOps.** We used to track docs in Notion. Now it sits in Azure DevOps with the developers' and product managers' work, so docs are visible in the same place as the features they describe, and it's easier for anyone to raise or follow a docs task.
-- **Analytics and feedback, for the first time.** Traffic analytics, search tracking, and on-page feedback, plus a monthly report that uses them to decide what to work on next.
+- **Analytics and feedback, for the first time.** Traffic analytics, search tracking, and on-page feedback, plus a monthly report that uses them to decide what to work on next. Readership data has already chosen the featured articles on the Help Hub's homepage.
 - **Release notes every two weeks,** drafted alongside development, so they're ready on release day.
-- **A security advisory process** for publishing advisories on the Help Hub.
+- **A security advisory process** for publishing advisories on the Help Hub. The first, on PHP2Shell, went out the day after Apteco patched the affected service.
 - **Room to grow.** The workflow is set up so more people can contribute directly as the docs grow. Developers and the technical teams already see docs work happening alongside theirs, and want to get involved.
 
 ### A quality system that works for one writer
 
-Content from six projects had to read as if one person wrote it, and stay that way with changes going out all the time. A house style guide sets the rules, Vale checks them with 16 custom rules I wrote, the checks run every time a page is edited, and an AI review agent checks each change and builds the site before a pull request.
+Content from six projects had to read as if one person wrote it, and stay that way with changes going out all the time. A house style guide sets the rules, Vale checks them with 16 custom rules I wrote, the checks run every time a page is edited, and an AI review agent checks each change and builds the site before a pull request. In the sections I've cleaned up so far, Vale alerts dropped by more than 80%, and 92% of pages pass the error-level checks.
 
 ### Working as a team of one
 
