@@ -110,14 +110,4 @@ Live pages I wrote on the Help Hub. They may have changed since.
 
 ## Work history
 
-??? note "Apteco · Technical Writer · November 2022 to now"
-
-    I look after the Apteco Help Hub, the public documentation for Apteco's marketing data platform: four products, admin guides, release notes, and technical updates. Everything under "Recent work" happened here.
-
-??? note "Make · Technical Writer · December 2021 to November 2022"
-
-    My first technical writing job. I wrote and maintained help documentation for Make, a no-code automation platform, using Paligo's structured, component-based authoring. I helped move more than 1,000 help topics into Paligo, so 2026 wasn't my first migration.
-
-??? note "Before technical writing · 2016 to 2021"
-
-    I got here the long way round: teaching English in South Korea, then editing, QA, and copywriting in Prague.
+My work history, and how I got from teaching English in South Korea to technical writing, is on the [About](../about.md#work-history) page.

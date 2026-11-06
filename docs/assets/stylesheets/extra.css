@@ -312,6 +312,40 @@ pre {
   color: var(--site-muted);
 }
 
+/* ---- Work history (About) --------------------------------------------- */
+
+/* Role on the left, years on the right, an optional line underneath. Same
+   dotted separators as Selected work. */
+.md-typeset .history__row {
+  padding: 0.75rem 0;
+  border-bottom: 1px dotted var(--site-border);
+}
+
+.md-typeset .history__head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.2rem 1rem;
+}
+
+.md-typeset .history__head strong {
+  font-weight: 600;
+}
+
+.md-typeset .history__head span {
+  color: var(--site-muted);
+  font-family: var(--site-font-mono);
+  font-size: 0.8em;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.md-typeset .history__row p {
+  margin: 0.25rem 0 0;
+  color: var(--site-muted);
+}
+
 /* ---- Post lists (blog index, archive, home) ---------------------------- */
 
 .post-row {
