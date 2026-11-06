@@ -34,7 +34,7 @@ Here's [what I've been working on](work/index.md), and here's my blog, [The docs
 :   About 950 pages from six MadCap Flare projects to one site, on my own. Publishing went from 7 or 8 minutes to about one, and more than 3,300 redirects keep old links working.
 
 [A docs quality system](work/docs-quality.md)
-:   A house style guide, 16 custom Vale rules, checks on every edit, and an AI review before every pull request.
+:   A house style guide, 16 custom Vale rules, checks on every edit, and an AI review before every pull request. Vale alerts are down by more than 80% in the sections I've cleaned up so far.
 
 [A docs program for a team of one](work/index.md#recent-work)
 :   278 pull requests since February, release notes every two weeks, and docs work tracked alongside development in Azure DevOps.
