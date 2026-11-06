@@ -5,11 +5,11 @@
 -#}
 {% extends "base.html" %}
 
-{#- The theme titles every page "Page - Site name", which gives the home page
-    (titled with the site name) "Rhys Vaughan - Rhys Vaughan". -#}
+{#- The theme titles every page "Page - Site name". A page whose title
+    already includes the site name (the home page) keeps its title as is. -#}
 {% block htmltitle %}
-  {% if page.meta and page.meta.title == config.site_name %}
-    <title>{{ config.site_name }}</title>
+  {% if page.meta and page.meta.title and config.site_name in page.meta.title %}
+    <title>{{ page.meta.title }}</title>
   {% else %}
     {{ super() }}
   {% endif %}

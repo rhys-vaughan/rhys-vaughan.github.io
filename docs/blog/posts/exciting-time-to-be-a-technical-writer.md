@@ -1,10 +1,10 @@
 ---
 date: 2026-11-05
-slug: the-docs-are-alright
-description: "Why I think it's an exciting time to be a technical writer, and what this blog is for."
+slug: exciting-time-to-be-a-technical-writer
+description: "AI has plenty of people worried about technical writing. This blog will cover why I'm optimistic about it and how my writing career evolves."
 ---
 
-# The docs are alright
+# Why I think it's an exciting time to be a technical writer
 
 Newer generations always have it tough. People say they're too lazy, too online, not trying hard enough. This kind of thing happens with every generation, yet somehow the kids keep turning out alright.
 

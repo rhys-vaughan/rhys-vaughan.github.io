@@ -16,10 +16,9 @@ definitions:
   - &page_description >-
     {{ page.meta.get("description", "") }}
 
-  # Blog posts get the blog's name above the title; other pages get nothing.
-  # Skipped when the post title is the blog's name (the first post).
+  # Blog posts get the blog's name above the title; other pages get nothing
   - &kicker >-
-    {%- if page.url and "blog/" in page.url and page.url != "blog/" and page.title != "The docs are alright" -%}
+    {%- if page.url and "blog/" in page.url and page.url != "blog/" -%}
       The docs are alright
     {%- endif -%}
 
@@ -27,11 +26,11 @@ definitions:
   - &address >-
     {{ config.site_url | replace("https://", "") | replace("/", "") }}
 
-  # Metadata versions, escaped for HTML attributes. A page titled with the
-  # site name (the home page) doesn't get the name twice.
+  # Metadata versions, escaped for HTML attributes. A page whose title
+  # already includes the site name (the home page) doesn't get it twice.
   - &meta_title >-
     {%- set title = page.meta.get("title", page.title) -%}
-    {%- if title == config.site_name -%}
+    {%- if config.site_name in title -%}
       {{ title | x }}
     {%- else -%}
       {{ title | x }} - {{ config.site_name | x }}
@@ -50,7 +49,7 @@ tags:
   og:type: website
   og:title: *meta_title
   og:description: *meta_description
-  og:image: "{{ image.url }}?v=4"
+  og:image: "{{ image.url }}?v=5"
   og:image:type: "{{ image.type }}"
   og:image:width: "{{ image.width }}"
   og:image:height: "{{ image.height }}"
@@ -58,7 +57,7 @@ tags:
   twitter:card: summary_large_image
   twitter:title: *meta_title
   twitter:description: *meta_description
-  twitter:image: "{{ image.url }}?v=4"
+  twitter:image: "{{ image.url }}?v=5"
 
 size: { width: 1200, height: 630 }
 layers:

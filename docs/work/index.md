@@ -9,7 +9,7 @@ hide:
 # Work
 
 I'm the technical writer at Apteco, where I look after the [Apteco Help Hub](https://help.apteco.com/en/){ target="_blank" rel="noopener" }: documentation for four products in a marketing data platform, plus admin guides, release notes, and technical updates. My readers range from marketers building their first audience to IT admins upgrading a production server.
-## What I built in 2026
+## Recent work
 
 At the start of the year our docs lived in six separate MadCap Flare projects. By the end of it, they were one docs-as-code site, run by a team of one.
 
@@ -35,9 +35,7 @@ Content from six projects had to read as if one person wrote it, and stay that w
 
 ### Working as a team of one
 
-When my colleague left at the start of 2026, I became Apteco's only technical writer. I decided it was the right time to move the docs to docs-as-code, and I was given the freedom to make that call.
-
-That decision has paid off. Automating a lot of the routine checking meant I could run the migration and keep up with the day-to-day work at the same time, with more of my time going on the writing and the decisions that need a person. Alongside the migration, I merged 278 pull requests between February and November.
+I've been Apteco's only technical writer since the start of 2026, and moving the docs to docs-as-code was my call ([the full story](docs-migration.md)). Automating a lot of the routine checking meant I could run the migration and keep up with the day-to-day work at the same time, with more of my time going on the writing and the decisions that need a person. Alongside the migration, I merged 278 pull requests between February and November.
 
 ## Case studies
 
@@ -114,7 +112,7 @@ Live pages I wrote on the Help Hub. They may have changed since.
 
 ??? note "Apteco · Technical Writer · November 2022 to now"
 
-    I look after the Apteco Help Hub, the public documentation for Apteco's marketing data platform: four products, admin guides, release notes, and technical updates. Everything under "What I built in 2026" happened here.
+    I look after the Apteco Help Hub, the public documentation for Apteco's marketing data platform: four products, admin guides, release notes, and technical updates. Everything under "Recent work" happened here.
 
 ??? note "Make · Technical Writer · December 2021 to November 2022"
 
