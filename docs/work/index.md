@@ -19,7 +19,7 @@ I planned and ran the move of about 950 pages from six Flare projects to one sit
 
 - Publishing went from 7 or 8 minutes to about one.
 - Readers search every product from one place, instead of picking the right help site first.
-- Old links still work: the site has about 3,000 redirect rules, audited before and after launch.
+- Old links still work: the site has more than 3,300 redirect rules, audited before and after launch.
 
 ### A docs program, not just a docs site
 
