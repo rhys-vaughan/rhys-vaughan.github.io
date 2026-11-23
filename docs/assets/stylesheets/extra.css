@@ -154,8 +154,12 @@ pre {
   text-decoration-thickness: 1px;
 }
 
-/* Theme toggle: the theme's palette form, minus its header-bar styling */
+/* Theme toggle: the theme's palette form, minus its header-bar styling.
+   position: relative keeps the theme's hidden radio inputs (absolutely
+   positioned, bottom: 0) inside the toggle. Without it they sit at the
+   bottom of the page, and focusing one on click scrolls the page down. */
 .site-header__palette .md-header__option {
+  position: relative;
   display: flex;
   max-width: none;
   opacity: 1;
