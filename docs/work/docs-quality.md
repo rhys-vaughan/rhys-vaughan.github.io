@@ -35,4 +35,4 @@ Automating the checks changed what reviewers spend their time on.
 
 ## Next
 
-Read the other case study: [Migrating to docs-as-code](docs-migration.md), how the site came together in the first place.
+Read the other case studies: [Migrating to docs-as-code](docs-migration.md), how the site came together in the first place, and [Building an API cookbook](orbit-api-cookbook.md), a Help Hub section generated from a developer's scripts.

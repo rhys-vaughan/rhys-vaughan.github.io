@@ -13,9 +13,9 @@ social:
 
 <div class="intro" markdown>
 
-Hello! I'm Rhys (like "Reese"), a technical writer and documentation engineer. I look after the [Apteco Help Hub](https://help.apteco.com/en/){ target="_blank" rel="noopener" } and the tooling behind it.
+Hello! I'm Rhys (like "Reese"), a technical writer and content engineer. I look after the [Apteco Help Hub](https://help.apteco.com/en/){ target="_blank" rel="noopener" } and the tooling behind it.
 
-Here's [what I've been working on](work/index.md), and here's my blog, [The docs are alright](blog/index.md).
+Here's [what I've been working on](work/index.md), [a bit about me](about.md), and my blog, [The docs are alright](blog/index.md).
 
 </div>
 
@@ -35,6 +35,9 @@ Here's [what I've been working on](work/index.md), and here's my blog, [The docs
 
 [A docs quality system](work/docs-quality.md)
 :   A house style guide, 16 custom Vale rules, checks on every edit, and an AI review before every pull request. Vale alerts are down by more than 80% in the sections I've cleaned up so far.
+
+[An API cookbook](work/orbit-api-cookbook.md)
+:   A developer's example scripts on GitHub, turned into 23 documented recipes on the Help Hub. The pages are generated from the scripts themselves, so GitHub stays the source.
 
 [A docs program for a team of one](work/index.md#recent-work)
 :   278 pull requests since February, release notes every two weeks, and docs work tracked alongside development in Azure DevOps.

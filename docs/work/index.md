@@ -8,10 +8,11 @@ hide:
 
 # Work
 
-I'm the technical writer at Apteco, where I look after the [Apteco Help Hub](https://help.apteco.com/en/){ target="_blank" rel="noopener" }: documentation for four products in a marketing data platform, plus admin guides, release notes, and technical updates. My readers range from marketers building their first audience to IT admins upgrading a production server.
+I'm the technical writer at Apteco, where I look after the [Apteco Help Hub](https://help.apteco.com/en/){ target="_blank" rel="noopener" }: documentation for four products in a marketing data platform, plus admin guides, release notes, and technical updates. Readers range from marketers building their first audience to IT admins upgrading a production server.
+
 ## Recent work
 
-At the start of the year our docs lived in six separate MadCap Flare projects. By the end of it, they were one docs-as-code site, run by a team of one.
+At the start of 2026, Apteco's docs lived in six separate MadCap Flare projects and scattered across multiple systems. By the end of it, I had moved everything to a docs-as-code framework and built a collaborative docs program, run by a team of one.
 
 ### Moving to docs-as-code
 
@@ -41,6 +42,7 @@ I've been Apteco's only technical writer since the start of 2026, and moving the
 
 - [Migrating to docs-as-code](docs-migration.md): how I moved 950 pages from six Flare projects to one site on my own, and what I'd do differently
 - [Docs quality system](docs-quality.md): the style guide, automated checks, and review workflow behind every change
+- [Building an API cookbook](orbit-api-cookbook.md): how a developer's example scripts became documented recipes on the Help Hub, with GitHub still the source
 
 ## Things I've built and set up
 
@@ -51,7 +53,7 @@ The tooling around the docs is as much a part of the job as the pages.
 - **A "Copy page" menu,** extended from the theme's copy button, that copies any page as Markdown, ready to paste into an AI assistant.
 - **Claude Code skills and agents** for repeat work: drafting release notes and patch notes, drafting new pages to a consistent structure, reviewing changes against the house style, and writing a weekly docs update for the company.
 - **Social cards** so shared Help Hub links get a proper preview, and build-time image compression.
-- **A winter snowfall effect** in the Help Hub header, because docs can be fun too.
+- **A winter snowfall effect** in the Help Hub header, because docs can be fun too ya know.
 
 ## How I work
 
@@ -63,7 +65,7 @@ I keep a human in the loop for every page. An AI can check a sentence against a 
 
     I like to know how a reader lands on a page: what brought them there, and how to get them the information they need.
 
-    I like building more than help text, such as cookbooks and prompt libraries.
+    I like building more than help text, such as [cookbooks](orbit-api-cookbook.md) and prompt libraries.
 
     I automate what I can, so I have more time for the docs work that adds the most value.
 

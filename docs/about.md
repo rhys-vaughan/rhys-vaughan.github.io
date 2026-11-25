@@ -8,15 +8,15 @@ hide:
 
 # About
 
-I'm Rhys, a technical writer and content engineer working on documentation at Apteco. I look after the [Apteco Help Hub](https://help.apteco.com/en/){ target="_blank" rel="noopener" }, and the tools and processes behind it.
+I'm Rhys (like "Reese"), a technical writer and content engineer working on documentation at Apteco. I look after the [Apteco Help Hub](https://help.apteco.com/en/){ target="_blank" rel="noopener" }, and the tools and processes behind it.
 
 ## How I got here
 
 I took a long way round. After a degree in anthropology, I moved to South Korea to teach English, met my wife there, and we later moved to Prague together.
 
-In Prague I worked as an editor, then in QA, then as a copywriter. Switching from copywriting to technical writing, at the end of 2021, is what made me fall in love with the job. The contrast in style and purpose was huge, and I enjoyed technical writing far more than writing copy.
+In Prague I worked as an editor, then in QA, then as a copywriter. I found my first tech writing job at the end of 2021, and I immediately loved it so much more than what came before. The contrast in style and purpose was huge, and I enjoyed technical writing far more than writing copy.
 
-I joined Apteco in 2022, and in 2026 I moved its help site to docs-as-code. There's more about that on [my work](work/index.md) page.
+I joined Apteco in 2022, and in 2026 I moved its help site to a docs-as-code framework and built a docs program I'm proud of. There's more about that on [my work](work/index.md) page.
 
 ## Work history
 

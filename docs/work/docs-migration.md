@@ -46,4 +46,4 @@ I'd plan the whole conversion pipeline before moving the first page, and fully t
 
 ## Next
 
-Read the other case study: [Docs quality system](docs-quality.md), the checks and review workflow that keep the new site consistent.
+Read the other case studies: [Docs quality system](docs-quality.md), the checks and review workflow that keep the new site consistent, and [Building an API cookbook](orbit-api-cookbook.md), a Help Hub section generated from a developer's scripts.
