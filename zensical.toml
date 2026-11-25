@@ -21,6 +21,7 @@ nav = [
     "work/index.md",
     { "Migrating to docs-as-code" = "work/docs-migration.md" },
     { "Docs quality system" = "work/docs-quality.md" },
+    { "Building an API cookbook" = "work/orbit-api-cookbook.md" },
   ] },
   { "Blog" = ["blog/index.md"] },
   { "About" = "about.md" },
